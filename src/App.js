@@ -32,8 +32,8 @@ function App() {
         <div className="h-[10%] w-[8%] text-semibold border-2 border-slate-500  text-sm text-sm text-center mt-6 rounded" onClick={() => handleSearch("beaches")}>Beaches</div>
         <div className="h-[10%] w-[8%] text-semibold border-2 border-slate-500  text-sm text-center mt-6 rounded" onClick={() => handleSearch("cities")}>Cities</div>
       </div>
-      <div className="h-[10%] w-[30%] border-2 border-slate-500 text-orange-500	font-bold ml-[6%] mt-8 p-1 rounded">Animals</div>
-      <hr className="w-[60%] h-[5%] mt-3 ml-[20%]  border-2 border-slate-400" />
+      {/* <div className="h-[10%] w-[30%] border-2 border-slate-500 text-orange-500	font-bold ml-[6%] mt-8 p-1 rounded">Animals</div> */}
+      {/* <hr className="w-[60%] h-[5%] mt-3 ml-[20%]  border-2 border-slate-400" /> */}
       <div className="mt-[2%] grid grid-cols-4 mx-10 ml-[9%]">
         {data?.map((image) => (
           <img key={image.id} className="w-[80%] h-[65%]" src={image.urls.regular} alt={image.alt_description} />
